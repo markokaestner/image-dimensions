@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.markokaestner.imagedimensions</string>
+	<key>connections</key>
+	<dict>
+		<key>1A43874D-959D-4BF9-9462-7084A4A0C2C8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0C8E7E89-AE56-44B4-91E9-B42153B1CB6D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>542C1CB2-1A1B-40AF-8EB1-0E939F2FBD27</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D51FECFC-D0EA-491C-BEF7-38324EC31728</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>AFAF9D93-3707-4A5C-9DFD-FFFBEC0033E6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BAB1AD9A-EEE0-4068-AF2D-C289EB7E5E4B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>CC0395D7-AA48-4C3A-8CF3-F19E46F53DF2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D51FECFC-D0EA-491C-BEF7-38324EC31728</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>CD6ACBAB-6CC4-4FD7-9D45-3D8AE485C5EE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1013EB3B-E4EE-4CB0-9756-5EEFF850D61C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5AFD784C-B81B-4997-BCE6-6E977999D588</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A43874D-959D-4BF9-9462-7084A4A0C2C8</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Copy filename to clipboard</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AFAF9D93-3707-4A5C-9DFD-FFFBEC0033E6</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy file to clipboard</string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Marko Kaestner</string>
+	<key>description</key>
+	<string>Show dimensions of one or multiple selected images</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Image Dimensions</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Alfred 2" to search "dim {query}"</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D51FECFC-D0EA-491C-BEF7-38324EC31728</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array>
+					<string>com.adobe.photoshop-image</string>
+					<string>com.compuserve.gif</string>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+				</array>
+				<key>name</key>
+				<string>Show Image Dimensions</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>542C1CB2-1A1B-40AF-8EB1-0E939F2FBD27</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>hotkey</key>
+				<integer>34</integer>
+				<key>hotmod</key>
+				<integer>655360</integer>
+				<key>hotstring</key>
+				<string>I</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>CC0395D7-AA48-4C3A-8CF3-F19E46F53DF2</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>1013EB3B-E4EE-4CB0-9756-5EEFF850D61C</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>dim</string>
+				<key>script</key>
+				<string>. workflowHandler.sh
+
+RANDOMUID=$(date +"%s")
+
+FILES="{query}"
+OLDIFS="$IFS"
+IFS='	'
+for f in ${FILES[*]}; do
+	WIDTH=$(sips -g pixelWidth "$f" | grep 'pixelWidth' | awk '{print($2)}')
+
+	HEIGHT=$(sips -g pixelHeight "$f" | grep 'pixelHeight' | awk '{print($2)}')
+
+	addResult "${RANDOMUID}" "$f" "$f" "Copy path to clipboard" "$f" "yes"
+	addResult "${RANDOMUID}" "" "$WIDTH" "width" "width.png" "no"
+	addResult "${RANDOMUID}" "" "$HEIGHT" "height" "height.png" "no"
+done
+IFS="$OLDIFS"
+
+getXMLResults</string>
+				<key>title</key>
+				<string>Show Image Dimensions</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CD6ACBAB-6CC4-4FD7-9D45-3D8AE485C5EE</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Path copied to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5AFD784C-B81B-4997-BCE6-6E977999D588</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Filename copied to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>0C8E7E89-AE56-44B4-91E9-B42153B1CB6D</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>FILENAME=$(basename "{query}")
+echo "$FILENAME" | pbcopy
+echo "$FILENAME"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1A43874D-959D-4BF9-9462-7084A4A0C2C8</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set the clipboard to POSIX file "{query}"
+return "{query}"</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AFAF9D93-3707-4A5C-9DFD-FFFBEC0033E6</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>File copied to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BAB1AD9A-EEE0-4068-AF2D-C289EB7E5E4B</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This is the Alfred 2 compatible workflow of the original extension created by Don Southard (http://www.dirtdon.com)
+
+The workflow was extended to be used as file action from within Alfred's file browser and based on the current Finder selection. It will also handle multiple selected files.</string>
+	<key>uidata</key>
+	<dict>
+		<key>0C8E7E89-AE56-44B4-91E9-B42153B1CB6D</key>
+		<dict>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>1013EB3B-E4EE-4CB0-9756-5EEFF850D61C</key>
+		<dict>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>1A43874D-959D-4BF9-9462-7084A4A0C2C8</key>
+		<dict>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>542C1CB2-1A1B-40AF-8EB1-0E939F2FBD27</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>5AFD784C-B81B-4997-BCE6-6E977999D588</key>
+		<dict>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>AFAF9D93-3707-4A5C-9DFD-FFFBEC0033E6</key>
+		<dict>
+			<key>ypos</key>
+			<real>570</real>
+		</dict>
+		<key>BAB1AD9A-EEE0-4068-AF2D-C289EB7E5E4B</key>
+		<dict>
+			<key>ypos</key>
+			<real>570</real>
+		</dict>
+		<key>CC0395D7-AA48-4C3A-8CF3-F19E46F53DF2</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>CD6ACBAB-6CC4-4FD7-9D45-3D8AE485C5EE</key>
+		<dict>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>D51FECFC-D0EA-491C-BEF7-38324EC31728</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://markokaestner.com</string>
+</dict>
+</plist>
